@@ -1,0 +1,13 @@
+{"database":"gaia_dr2_02",
+"table":"sso_source",
+"is_partitioned":0,
+"is_director":0,
+"schema":[
+{"name":"solution_id","type":"BIGINT"},
+{"name":"source_id","type":"BIGINT NOT NULL"},
+{"name":"num_of_obs","type":"INT"},
+{"name":"number_mp","type":"BIGINT"},
+{"name":"denomination","type":"TEXT"}
+],
+"auth_key":"CHANGEME"
+}

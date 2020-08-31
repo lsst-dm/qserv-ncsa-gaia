@@ -1,0 +1,14 @@
+{"database":"gaia_dr2_02",
+ "table":"gaia_source",
+ "overlap":0,
+ "index":"idx_dec",
+ "spec":"DEFAULT",
+ "comment":"The index is meant for optimizing spatial queries",
+ "columns":[
+   {"column":"dec",
+    "length":0,
+    "ascending":1
+   }
+ ],
+ "auth_key":"***"
+}

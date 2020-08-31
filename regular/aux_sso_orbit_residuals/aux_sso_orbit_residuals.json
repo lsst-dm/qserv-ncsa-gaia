@@ -1,0 +1,18 @@
+{"database":"gaia_dr2_02",
+"table":"aux_sso_orbit_residuals",
+"is_partitioned":0,
+"is_director":0,
+"schema":[
+{"name":"source_id","type":"BIGINT NOT NULL"},
+{"name":"transit_id","type":"BIGINT"},
+{"name":"observation_id","type":"BIGINT"},
+{"name":"number_mp","type":"BIGINT"},
+{"name":"epoch","type":"DOUBLE"},
+{"name":"residual_ra","type":"DOUBLE"},
+{"name":"residual_dec","type":"DOUBLE"},
+{"name":"residual_al","type":"DOUBLE"},
+{"name":"residual_ac","type":"DOUBLE"},
+{"name":"selected","type":"BOOLEAN"}
+],
+"auth_key":"CHANGEME"
+}

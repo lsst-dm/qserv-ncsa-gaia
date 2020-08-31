@@ -1,0 +1,20 @@
+{"database":"gaia_dr2_02",
+"table":"light_curves",
+"is_partitioned":0,
+"is_director":0,
+"schema":[
+{"name":"source_id","type":"BIGINT NOT NULL"},
+{"name":"transit_id","type":"BIGINT"},
+{"name":"band","type":"TEXT"},
+{"name":"time","type":"DOUBLE"},
+{"name":"mag","type":"FLOAT"},
+{"name":"flux","type":"FLOAT"},
+{"name":"flux_error","type":"FLOAT"},
+{"name":"flux_over_error","type":"FLOAT"},
+{"name":"rejected_by_photometry","type":"BOOLEAN"},
+{"name":"rejected_by_variability","type":"BOOLEAN"},
+{"name":"other_flags","type":"BIGINT"},
+{"name":"solution_id","type":"BIGINT"}
+],
+"auth_key":"CHANGEME"
+}

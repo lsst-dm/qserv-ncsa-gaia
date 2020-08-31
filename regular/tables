@@ -1,0 +1,14 @@
+aux_allwise_agn_gdr2_cross_id
+aux_iers_gdr2_cross_id
+aux_sso_orbit_residuals
+aux_sso_orbits
+light_curves
+sso_observation
+sso_source
+vari_cepheid
+vari_classifier_result
+vari_long_period_variable
+vari_rotation_modulation
+vari_rrlyrae
+vari_short_timescale
+vari_time_series_statistics

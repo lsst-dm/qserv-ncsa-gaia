@@ -1,0 +1,13 @@
+{"database":"gaia_dr2_02",
+"table":"vari_classifier_result",
+"is_partitioned":0,
+"is_director":0,
+"schema":[
+{"name":"solution_id","type":"BIGINT"},
+{"name":"source_id","type":"BIGINT NOT NULL"},
+{"name":"classifier_name","type":"TEXT"},
+{"name":"best_class_name","type":"TEXT"},
+{"name":"best_class_score","type":"DOUBLE"}
+],
+"auth_key":"CHANGEME"
+}

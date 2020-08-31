@@ -1,0 +1,32 @@
+# Launching containers at workers
+# This command is encapsulated into an environment variable CONTAINER_CMD
+# which is set and used like this:
+. /datasets/gapon/gaia_dr2_02/qserv-ncsa-gaia/gaia_source/scripts/env.sh 
+$CONTAINER_CMD bash -c "pwd"
+
+# Each script shown below uses environment variable CONTAINER_CMD
+
+# Launch the partitioning tool at all workers
+for n in $(seq --format="qserv-db%02.0f" 31 36); do \
+  ssh $n /datasets/gapon/gaia_dr2_02/qserv-ncsa-gaia/gaia_source/scripts/partition.sh; \
+done
+
+# Start transactions (each worker starts its own transaction)
+for n in $(seq --format="qserv-db%02.0f" 31 36); do \
+  ssh -n $n /datasets/gapon/gaia_dr2_02/qserv-ncsa-gaia/gaia_source/scripts/transaction_begin.sh; \
+done
+
+# Allocate chunks
+for n in $(seq --format="qserv-db%02.0f" 31 36); do \
+  ssh -n $n /datasets/gapon/gaia_dr2_02/qserv-ncsa-gaia/gaia_source/scripts/allocate_chunks.sh; \
+done
+
+# Ingest chunks
+for n in $(seq --format="qserv-db%02.0f" 31 36); do \
+  ssh -n $n /datasets/gapon/gaia_dr2_02/qserv-ncsa-gaia/gaia_source/scripts/ingest.sh; \
+done
+
+# Commit transactions
+for n in $(seq --format="qserv-db%02.0f" 31 36); do \
+  ssh -n $n /datasets/gapon/gaia_dr2_02/qserv-ncsa-gaia/gaia_source/scripts/transaction_commit.sh; \
+done

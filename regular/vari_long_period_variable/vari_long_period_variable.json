@@ -1,0 +1,17 @@
+{"database":"gaia_dr2_02",
+"table":"vari_long_period_variable",
+"is_partitioned":0,
+"is_director":0,
+"schema":[
+{"name":"solution_id","type":"BIGINT"},
+{"name":"source_id","type":"BIGINT NOT NULL"},
+{"name":"abs_mag_bol","type":"DOUBLE"},
+{"name":"abs_mag_bol_error","type":"DOUBLE"},
+{"name":"rsg_flag","type":"BOOLEAN"},
+{"name":"bolometric_corr","type":"DOUBLE"},
+{"name":"bolometric_corr_error","type":"DOUBLE"},
+{"name":"frequency","type":"DOUBLE"},
+{"name":"frequency_error","type":"DOUBLE"}
+],
+"auth_key":"CHANGEME"
+}

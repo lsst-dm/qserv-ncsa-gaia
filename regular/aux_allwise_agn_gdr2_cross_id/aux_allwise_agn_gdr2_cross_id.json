@@ -1,0 +1,10 @@
+{"database":"gaia_dr2_02",
+"table":"aux_allwise_agn_gdr2_cross_id",
+"is_partitioned":0,
+"is_director":0,
+"schema":[
+{"name":"allwise_name","type":"TEXT"},
+{"name":"source_id","type":"BIGINT NOT NULL"}
+],
+"auth_key":"CHANGEME"
+}

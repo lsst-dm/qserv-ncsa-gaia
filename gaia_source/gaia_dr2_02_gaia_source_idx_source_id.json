@@ -1,0 +1,14 @@
+{"database":"gaia_dr2_02",
+ "table":"gaia_source",
+ "overlap":0,
+ "index":"idx_source_id",
+ "spec":"UNIQUE",
+ "comment":"The primary key on the object identifiers",
+ "columns":[
+   {"column":"source_id",
+    "length":0,
+    "ascending":1
+   }
+ ],
+ "auth_key":"*"
+}
